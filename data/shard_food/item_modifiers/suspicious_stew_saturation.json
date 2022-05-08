@@ -1,0 +1,4 @@
+{
+  "function": "minecraft:set_nbt",
+  "tag": "{Effects:[{EffectId:23b,EffectDuration:288000}]}"
+}
