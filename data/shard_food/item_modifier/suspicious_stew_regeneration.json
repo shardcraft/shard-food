@@ -1,0 +1,11 @@
+{
+  "function": "set_components",
+  "components": {
+    "minecraft:suspicious_stew_effects": [
+      {
+        "duration": 144000,
+        "id": "minecraft:regeneration"
+      }
+    ]
+  }
+}
