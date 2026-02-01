@@ -1,4 +1,4 @@
-gamerule naturalRegeneration false
+gamerule natural_health_regeneration false
 scoreboard objectives add foodLevel food
 scoreboard objectives add health health
 

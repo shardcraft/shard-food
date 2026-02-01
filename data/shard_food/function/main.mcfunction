@@ -11,6 +11,3 @@ execute if score global clocks matches 0 run execute as @a[scores={cake=1..}] ru
 
 # Modify vanilla suspicious stews to have longer duration effects.
 execute if score global clocks matches 0 run function shard_food:suspicious_stew
-
-# Debug
-execute if score global clocks matches 0 run tell @a[team=debug] shard_food
