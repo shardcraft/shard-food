@@ -1,0 +1,28 @@
+{
+  "parent": "shard_food:food/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:cake"
+    },
+    "title": "Party Food",
+    "frame": "task",
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:chorus_fruit",
+            "minecraft:cookie",
+            "minecraft:glow_berries"
+          ]
+        }
+      }
+    }
+  }
+}

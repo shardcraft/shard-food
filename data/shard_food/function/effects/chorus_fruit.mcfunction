@@ -1,2 +1,1 @@
-effect give @s minecraft:saturation 1125 0 true
-scoreboard players set @s chorus_fruit 0
+advancement revoke @s only shard_food:food/party_food/chorus_fruit

@@ -1,0 +1,30 @@
+{
+  "parent": "shard_food:food/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:carrot"
+    },
+    "title": "Sturdy Vegetables",
+    "frame": "task",
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:baked_potato",
+            "minecraft:beetroot",
+            "minecraft:carrot",
+            "minecraft:dried_kelp",
+            "minecraft:pumpkin_pie"
+          ]
+        }
+      }
+    }
+  }
+}

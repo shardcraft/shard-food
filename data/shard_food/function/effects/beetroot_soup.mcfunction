@@ -1,2 +1,2 @@
 effect give @s minecraft:saturation 144000 0 true
-scoreboard players set @s beetroot_soup 0
+advancement revoke @s only shard_food:food/hearty_stews/beetroot_soup

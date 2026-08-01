@@ -1,46 +1,46 @@
 gamerule natural_health_regeneration false
 scoreboard objectives add foodLevel food
 scoreboard objectives add health health
-
-scoreboard objectives add rabbit_stew minecraft.used:minecraft.rabbit_stew
-scoreboard objectives add mushroom_stew minecraft.used:minecraft.mushroom_stew
-scoreboard objectives add beetroot_soup minecraft.used:minecraft.beetroot_soup
-scoreboard objectives add suspicious_stew minecraft.used:minecraft.suspicious_stew
-scoreboard objectives add cookie minecraft.used:minecraft.cookie
-scoreboard objectives add cake minecraft.custom:minecraft.eat_cake_slice
-
-scoreboard objectives add beetroot minecraft.used:minecraft.beetroot
-scoreboard objectives add dried_kelp minecraft.used:minecraft.dried_kelp
-scoreboard objectives add potato minecraft.used:minecraft.potato
-scoreboard objectives add pufferfish minecraft.used:minecraft.pufferfish
-scoreboard objectives add tropical_fish minecraft.used:minecraft.tropical_fish
-scoreboard objectives add chicken minecraft.used:minecraft.chicken
-scoreboard objectives add cod minecraft.used:minecraft.cod
-scoreboard objectives add glow_berries minecraft.used:minecraft.glow_berries
-scoreboard objectives add melon_slice minecraft.used:minecraft.melon_slice
-scoreboard objectives add mutton minecraft.used:minecraft.mutton
-scoreboard objectives add poisonous_potato minecraft.used:minecraft.poisonous_potato
-scoreboard objectives add salmon minecraft.used:minecraft.salmon
-scoreboard objectives add spider_eye minecraft.used:minecraft.spider_eye
-scoreboard objectives add sweet_berries minecraft.used:minecraft.sweet_berries
-scoreboard objectives add beef minecraft.used:minecraft.beef
-scoreboard objectives add carrot minecraft.used:minecraft.carrot
-scoreboard objectives add porkchop minecraft.used:minecraft.porkchop
-scoreboard objectives add rabbit minecraft.used:minecraft.rabbit
-scoreboard objectives add apple minecraft.used:minecraft.apple
-scoreboard objectives add chorus_fruit minecraft.used:minecraft.chorus_fruit
-scoreboard objectives add enchanted_golden_apple minecraft.used:minecraft.enchanted_golden_apple
-scoreboard objectives add golden_apple minecraft.used:minecraft.golden_apple
-scoreboard objectives add rotten_flesh minecraft.used:minecraft.rotten_flesh
-scoreboard objectives add baked_potato minecraft.used:minecraft.baked_potato
-scoreboard objectives add bread minecraft.used:minecraft.bread
-scoreboard objectives add cooked_cod minecraft.used:minecraft.cooked_cod
-scoreboard objectives add cooked_rabbit minecraft.used:minecraft.cooked_rabbit
-scoreboard objectives add cooked_chicken minecraft.used:minecraft.cooked_chicken
-scoreboard objectives add cooked_mutton minecraft.used:minecraft.cooked_mutton
-scoreboard objectives add cooked_salmon minecraft.used:minecraft.cooked_salmon
-scoreboard objectives add golden_carrot minecraft.used:minecraft.golden_carrot
-scoreboard objectives add cooked_beef minecraft.used:minecraft.cooked_beef
-scoreboard objectives add cooked_porkchop minecraft.used:minecraft.cooked_porkchop
-scoreboard objectives add pumpkin_pie minecraft.used:minecraft.pumpkin_pie
-scoreboard objectives add honey_bottle minecraft.used:minecraft.honey_bottle
+scoreboard objectives add eatCakeSlice minecraft.custom:minecraft.eat_cake_slice
+scoreboard objectives remove rabbit_stew
+scoreboard objectives remove mushroom_stew
+scoreboard objectives remove beetroot_soup
+scoreboard objectives remove suspicious_stew
+scoreboard objectives remove cookie
+scoreboard objectives remove cake
+scoreboard objectives remove beetroot
+scoreboard objectives remove dried_kelp
+scoreboard objectives remove potato
+scoreboard objectives remove pufferfish
+scoreboard objectives remove tropical_fish
+scoreboard objectives remove chicken
+scoreboard objectives remove cod
+scoreboard objectives remove glow_berries
+scoreboard objectives remove melon_slice
+scoreboard objectives remove mutton
+scoreboard objectives remove poisonous_potato
+scoreboard objectives remove salmon
+scoreboard objectives remove spider_eye
+scoreboard objectives remove sweet_berries
+scoreboard objectives remove beef
+scoreboard objectives remove carrot
+scoreboard objectives remove porkchop
+scoreboard objectives remove rabbit
+scoreboard objectives remove apple
+scoreboard objectives remove chorus_fruit
+scoreboard objectives remove enchanted_golden_apple
+scoreboard objectives remove golden_apple
+scoreboard objectives remove rotten_flesh
+scoreboard objectives remove baked_potato
+scoreboard objectives remove bread
+scoreboard objectives remove cooked_cod
+scoreboard objectives remove cooked_rabbit
+scoreboard objectives remove cooked_chicken
+scoreboard objectives remove cooked_mutton
+scoreboard objectives remove cooked_salmon
+scoreboard objectives remove golden_carrot
+scoreboard objectives remove cooked_beef
+scoreboard objectives remove cooked_porkchop
+scoreboard objectives remove pumpkin_pie
+scoreboard objectives remove honey_bottle
+scoreboard objectives remove cookie_trail

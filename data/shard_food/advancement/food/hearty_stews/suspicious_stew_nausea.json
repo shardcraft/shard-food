@@ -1,0 +1,37 @@
+{
+  "parent": "shard_food:food/hearty_stews/suspicious_stew_jump_boost",
+  "display": {
+    "icon": {
+      "id": "minecraft:closed_eyeblossom"
+    },
+    "title": "Suspicious Stew (Nausea)",
+    "frame": "task",
+    "description": "Eat a suspicious stew with the nausea effect.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ],
+          "components": {
+            "minecraft:suspicious_stew_effects": [
+              {
+                "id": "minecraft:nausea",
+                "duration": 140
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/suspicious_stew_nausea"
+  }
+}

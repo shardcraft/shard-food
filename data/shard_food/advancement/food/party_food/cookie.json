@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/party_food/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:cookie"
+    },
+    "title": "Cookie",
+    "frame": "task",
+    "description": "Eat cookie.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cookie"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/cookie"
+  }
+}

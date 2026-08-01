@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/sturdy_vegetables/baked_potato",
+  "display": {
+    "icon": {
+      "id": "minecraft:dried_kelp"
+    },
+    "title": "Dried Kelp",
+    "frame": "task",
+    "description": "Eat dried kelp.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:dried_kelp"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/dried_kelp"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/swift_fruits/apple",
+  "display": {
+    "icon": {
+      "id": "minecraft:melon_slice"
+    },
+    "title": "Melon Slice",
+    "frame": "task",
+    "description": "Eat melon slice.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:melon_slice"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/melon_slice"
+  }
+}

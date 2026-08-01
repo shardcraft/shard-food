@@ -1,3 +1,3 @@
-effect give @s minecraft:speed 8 10
-effect give @s minecraft:saturation 563 0 true
-scoreboard players set @s cookie 0
+tag @s add eatCookie
+schedule function shard_food:side_effects/clear_cookie_tag 60s
+advancement revoke @s only shard_food:food/party_food/cookie

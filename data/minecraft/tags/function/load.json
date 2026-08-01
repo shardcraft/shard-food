@@ -1,5 +1,6 @@
 {
   "values": [
-    "shard_food:main"
+    "shard_food:main",
+    "shard_food:initialize"
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "parent": "shard_food:food/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:apple"
+    },
+    "title": "Swift Fruits",
+    "frame": "task",
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:apple",
+            "minecraft:melon_slice",
+            "minecraft:sweet_berries"
+          ]
+        }
+      }
+    }
+  }
+}

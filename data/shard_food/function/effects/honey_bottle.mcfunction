@@ -1,2 +1,3 @@
-effect give @s minecraft:saturation 6750 0 true
-scoreboard players set @s honey_bottle 0
+effect give @s minecraft:saturation 72000 0 true
+effect give @s minecraft:health_boost 3600 0 true
+advancement revoke @s only shard_food:food/rustic_bites/honey_bottle

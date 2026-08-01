@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/mighty_meats/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_beef"
+    },
+    "title": "Cooked Beef",
+    "frame": "task",
+    "description": "Eat cooked beef.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cooked_beef"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/cooked_beef"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/party_food/chorus_fruit",
+  "display": {
+    "icon": {
+      "id": "minecraft:glow_berries"
+    },
+    "title": "Glow Berries",
+    "frame": "task",
+    "description": "Eat glow berries.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:glow_berries"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/glow_berries"
+  }
+}

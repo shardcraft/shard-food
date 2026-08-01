@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/sturdy_vegetables/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:carrot"
+    },
+    "title": "Carrot",
+    "frame": "task",
+    "description": "Eat carrot.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:carrot"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/carrot"
+  }
+}

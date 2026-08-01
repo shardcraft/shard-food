@@ -1,0 +1,37 @@
+{
+  "parent": "shard_food:food/hearty_stews/suspicious_stew_nausea",
+  "display": {
+    "icon": {
+      "id": "minecraft:poppy"
+    },
+    "title": "Suspicious Stew (Night Vision)",
+    "frame": "task",
+    "description": "Eat a suspicious stew with the night vision effect.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ],
+          "components": {
+            "minecraft:suspicious_stew_effects": [
+              {
+                "id": "minecraft:night_vision",
+                "duration": 100
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/suspicious_stew_night_vision"
+  }
+}

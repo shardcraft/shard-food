@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/hearty_stews/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:mushroom_stew"
+    },
+    "title": "Mushroom Stew",
+    "frame": "task",
+    "description": "Eat mushroom stew.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:mushroom_stew"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/mushroom_stew"
+  }
+}

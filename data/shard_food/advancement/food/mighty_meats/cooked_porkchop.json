@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/mighty_meats/cooked_beef",
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_porkchop"
+    },
+    "title": "Cooked Porkchop",
+    "frame": "task",
+    "description": "Eat cooked porkchop.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cooked_porkchop"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/cooked_porkchop"
+  }
+}

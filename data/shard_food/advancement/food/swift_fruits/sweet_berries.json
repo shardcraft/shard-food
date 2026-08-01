@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/swift_fruits/melon_slice",
+  "display": {
+    "icon": {
+      "id": "minecraft:sweet_berries"
+    },
+    "title": "Sweet Berries",
+    "frame": "task",
+    "description": "Eat sweet berries.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:sweet_berries"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/sweet_berries"
+  }
+}

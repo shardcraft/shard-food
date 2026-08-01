@@ -1,2 +1,2 @@
 effect give @s minecraft:saturation 144000 0 true
-scoreboard players set @s rabbit_stew 0
+advancement revoke @s only shard_food:food/hearty_stews/rabbit_stew

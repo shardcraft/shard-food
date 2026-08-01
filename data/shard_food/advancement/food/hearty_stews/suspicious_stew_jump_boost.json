@@ -1,0 +1,37 @@
+{
+  "parent": "shard_food:food/hearty_stews/suspicious_stew_fire_resistance",
+  "display": {
+    "icon": {
+      "id": "minecraft:cornflower"
+    },
+    "title": "Suspicious Stew (Jump Boost)",
+    "frame": "task",
+    "description": "Eat a suspicious stew with the jump boost effect.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ],
+          "components": {
+            "minecraft:suspicious_stew_effects": [
+              {
+                "id": "minecraft:jump_boost",
+                "duration": 100
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/suspicious_stew_jump_boost"
+  }
+}

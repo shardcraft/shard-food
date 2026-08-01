@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/hearty_stews/beetroot_soup",
+  "display": {
+    "icon": {
+      "id": "minecraft:rabbit_stew"
+    },
+    "title": "Rabbit Stew",
+    "frame": "task",
+    "description": "Eat rabbit stew.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:rabbit_stew"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/rabbit_stew"
+  }
+}

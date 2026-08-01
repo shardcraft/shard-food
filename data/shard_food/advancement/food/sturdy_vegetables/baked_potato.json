@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/sturdy_vegetables/pumpkin_pie",
+  "display": {
+    "icon": {
+      "id": "minecraft:baked_potato"
+    },
+    "title": "Baked Potato",
+    "frame": "task",
+    "description": "Eat baked potato.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:baked_potato"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/baked_potato"
+  }
+}

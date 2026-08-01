@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/party_food/cookie",
+  "display": {
+    "icon": {
+      "id": "minecraft:chorus_fruit"
+    },
+    "title": "Chorus Fruit",
+    "frame": "task",
+    "description": "Eat chorus fruit.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:chorus_fruit"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/chorus_fruit"
+  }
+}

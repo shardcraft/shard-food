@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/golden_feast/golden_carrot",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_apple"
+    },
+    "title": "Golden Apple",
+    "frame": "task",
+    "description": "Eat golden apple.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:golden_apple"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/golden_apple"
+  }
+}

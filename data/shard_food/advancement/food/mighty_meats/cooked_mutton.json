@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/mighty_meats/cooked_chicken",
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_mutton"
+    },
+    "title": "Cooked Mutton",
+    "frame": "task",
+    "description": "Eat cooked mutton.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cooked_mutton"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/cooked_mutton"
+  }
+}

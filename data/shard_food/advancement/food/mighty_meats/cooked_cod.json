@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/mighty_meats/cooked_rabbit",
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_cod"
+    },
+    "title": "Cooked Cod",
+    "frame": "task",
+    "description": "Eat cooked cod.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cooked_cod"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/cooked_cod"
+  }
+}

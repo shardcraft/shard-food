@@ -1,0 +1,37 @@
+{
+  "parent": "shard_food:food/hearty_stews/suspicious_stew_regeneration",
+  "display": {
+    "icon": {
+      "id": "minecraft:dandelion"
+    },
+    "title": "Suspicious Stew (Saturation)",
+    "frame": "task",
+    "description": "Eat a suspicious stew with the saturation effect.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ],
+          "components": {
+            "minecraft:suspicious_stew_effects": [
+              {
+                "id": "minecraft:saturation",
+                "duration": 7
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/suspicious_stew_saturation"
+  }
+}

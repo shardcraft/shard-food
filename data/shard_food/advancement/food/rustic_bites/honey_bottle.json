@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/rustic_bites/bread",
+  "display": {
+    "icon": {
+      "id": "minecraft:honey_bottle"
+    },
+    "title": "Honey Bottle",
+    "frame": "task",
+    "description": "Eat honey bottle.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:honey_bottle"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/honey_bottle"
+  }
+}

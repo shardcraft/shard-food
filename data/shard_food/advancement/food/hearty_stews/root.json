@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:mushroom_stew"
+    },
+    "title": "Hearty Stews",
+    "frame": "task",
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:beetroot_soup",
+            "minecraft:mushroom_stew",
+            "minecraft:rabbit_stew",
+            "minecraft:suspicious_stew"
+          ]
+        }
+      }
+    }
+  }
+}

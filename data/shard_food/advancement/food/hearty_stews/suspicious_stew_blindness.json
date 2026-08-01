@@ -1,0 +1,37 @@
+{
+  "parent": "shard_food:food/hearty_stews/rabbit_stew",
+  "display": {
+    "icon": {
+      "id": "minecraft:azure_bluet"
+    },
+    "title": "Suspicious Stew (Blindness)",
+    "frame": "task",
+    "description": "Eat a suspicious stew with the blindness effect.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ],
+          "components": {
+            "minecraft:suspicious_stew_effects": [
+              {
+                "id": "minecraft:blindness",
+                "duration": 220
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/suspicious_stew_blindness"
+  }
+}

@@ -1,0 +1,1 @@
+execute as @a[tag=eatCookie] at @s run particle minecraft:item{item:{id:"minecraft:cookie"}} ~ ~1 ~ 0.2 0.3 0.2 0 5

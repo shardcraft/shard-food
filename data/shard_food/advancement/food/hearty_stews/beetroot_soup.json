@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/hearty_stews/mushroom_stew",
+  "display": {
+    "icon": {
+      "id": "minecraft:beetroot_soup"
+    },
+    "title": "Beetroot Soup",
+    "frame": "task",
+    "description": "Eat beetroot soup.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:beetroot_soup"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/beetroot_soup"
+  }
+}

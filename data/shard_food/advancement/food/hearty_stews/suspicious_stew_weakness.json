@@ -1,0 +1,37 @@
+{
+  "parent": "shard_food:food/hearty_stews/suspicious_stew_saturation",
+  "display": {
+    "icon": {
+      "id": "minecraft:red_tulip"
+    },
+    "title": "Suspicious Stew (Weakness)",
+    "frame": "task",
+    "description": "Eat a suspicious stew with the weakness effect.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ],
+          "components": {
+            "minecraft:suspicious_stew_effects": [
+              {
+                "id": "minecraft:weakness",
+                "duration": 140
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/suspicious_stew_weakness"
+  }
+}

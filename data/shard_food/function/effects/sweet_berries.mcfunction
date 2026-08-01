@@ -1,2 +1,3 @@
-effect give @s minecraft:saturation 563 0 true
-scoreboard players set @s sweet_berries 0
+effect give @s minecraft:saturation 72000 0 true
+effect give @s minecraft:speed 3600 0 true
+advancement revoke @s only shard_food:food/swift_fruits/sweet_berries

@@ -1,0 +1,29 @@
+{
+  "parent": "shard_food:food/sturdy_vegetables/beetroot",
+  "display": {
+    "icon": {
+      "id": "minecraft:pumpkin_pie"
+    },
+    "title": "Pumpkin Pie",
+    "frame": "task",
+    "description": "Eat pumpkin pie.",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "eaten": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:pumpkin_pie"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "shard_food:effects/pumpkin_pie"
+  }
+}

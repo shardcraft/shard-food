@@ -1,2 +1,2 @@
-effect give @s minecraft:saturation 563 0 true
-scoreboard players set @s glow_berries 0
+effect give @s minecraft:glowing 900 0 true
+advancement revoke @s only shard_food:food/party_food/glow_berries
